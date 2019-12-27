@@ -6,14 +6,6 @@
         <span class="badge">{{heroe.id}}</span>{{heroe.name}}
     </li>
 </ul>
+<app-heroe-detail [heroe]="selectedHeroe"></app-heroe-detail>
 
-<div *ngIf="selectedHeroe">
-    <h2>{{selectedHeroe.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedHeroe.id}}</div>
-    <div>
-        <label>name:
-            <input [(ngModel)]="selectedHeroe.name" placeholder="name"/>
-        </label>
-    </div>
 
-</div>
